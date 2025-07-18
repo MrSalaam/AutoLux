@@ -1907,7 +1907,93 @@ a { color: inherit; text-decoration: none; }
   }
 }
 
+@media (max-width: 1024px) {
+  /* OUR VALUES SECTION */
+  .values-grid {
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+    gap: 2rem;
+  }
 
+  /* If you're using cards or blocks inside values */
+  .value-card {
+    padding: 2rem;
+  }
+
+  /* OUR SERVICES SECTION */
+  .services-grid {
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+    gap: 2rem;
+  }
+
+  /* OUR STORY SECTION */
+  .story-wrapper {
+    grid-template-columns: 1fr; /* Stack image and content */
+    text-align: center;
+  }
+
+  .story-image {
+    max-width: 100%;
+  }
+
+  .story-content {
+    padding-top: 2rem;
+  }
+
+  .story-content .btn {
+    display: inline-block;
+    margin-top: 2rem;
+  }
+
+  /* Optional: Center align text for better readability */
+  .story-content .section-title,
+  .story-content .section-subtitle,
+  .story-content .story-text {
+    text-align: center;
+  }
+}
+  /* TESTIMONIALS SECTION */
+  .testimonials-grid {
+    grid-template-columns: 1fr; /* Stack all testimonials vertically */
+    gap: 2rem;
+  }
+
+  .testimonial-card {
+    padding: 2rem;
+  }
+
+  .testimonial-text {
+    font-size: 1.05rem;
+  }
+
+  .author-avatar {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+
+  .author-name {
+    font-size: 1rem;
+  }
+
+  .author-title {
+    font-size: 0.9rem;
+  }
+
+@media (max-width: 768px) {
+  .testimonial-card {
+    padding: 1.5rem;
+  }
+
+  .quote-icon {
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+  }
+
+  .testimonial-text {
+    font-size: 1rem;
+  }
+}
 
 
 

@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoLux</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header class="header" id="main-header">
+    <div class="header-glass-container glass">
+      <div class="logo">Auto<span>Lux</span></div>
+      <div class="nav-menu" id="navMenu">
+        <nav class="nav">
+          <a href="#home">Home</a>
+          <a href="#collection">Collection</a>
+          <a href="#service">Services</a>
+          <a href="#our-story">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+
+
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="header-cta">
+        <a href="#test-drive" class="btn glass-btn">Test Drive</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero-slider" id="home">
+    <div class="hero-slide active" style="background-image: url('./images/urus.jpg')">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Discover the Future of <span>Driving in Style</span></h1>
+        <p>Design, performance, and innovation merge to deliver a top-tier driving experience.</p>
+        <a href="#cars" class="btn primary">Browse Cars</a>
+
+
+        
+      </div>
+
+
+    </div>
+    <div class="hero-slide" style="background-image: url('./images/benz.jpg')">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Unleash Power with <span>Every Drive</span></h1>
+        <p>Experience raw performance with precision engineering and luxury comfort.</p>
+        <a href="#cars" class="btn primary">Browse Cars</a>
+      </div>
+    </div>
+    <div class="hero-slide" style="background-image: url('./images/audi.jpg')">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Drive Bold. <span>Drive Iconic.</span></h1>
+        <p>Make a statement on the road with bold design and unmatched presence.</p>
+        <a href="#cars" class="btn primary">Browse Cars</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== LOGO WALL ========== -->
+<section class="logo-wall">
+  <div class="container">
+    <h2>Trusted by Leading Brands</h2>
+    <div class="logos">
+      <img src="./images/Tesla,_Inc.-Logo.wine.svg" alt="Tesla" />
+      <img src="./images/BMW-Logo.wine.svg" alt="BMW" />
+      <img src="./images/Mercedes-Benz-Logo.wine.svg" alt="Mercedes" />
+      <img src="./images/Audi-Logo.wine.svg" alt="Audi" />
+      <img src="./images/Porsche-Logo.wine.svg" alt="Porsche" />
+      <img src="./images/Toyota_Canada_Inc.-Logo.wine.svg" alt="Lexus" />
+    </div>
+  </div>
+</section>
+
+<!-- ========== FEATURED CARS SECTION ========== -->
+<section class="featured" id="cars">
+  <div class="container">
+    <h2 class="section-title">Featured Cars</h2>
+    <p class="section-subtext">Explore our top selection of premium vehicles available now.</p>
+    <div class="cars-grid"></div>
+  </div>
+</section>
+
+<!-- ========== ADVANCED FILTERS ========== -->
+<section class="advanced-filters section" id="filters">
+  <div class="container">
+    <h2 class="section-title">Refine Your Search</h2>
+    <form class="filters-form">
+      <div class="filter-grid">
+        <select id="brand">
+          <option value="">All Brands</option>
+          <option value="Tesla">Tesla</option>
+          <option value="BMW">BMW</option>
+          <option value="Mercedes">Mercedes</option>
+          <option value="Toyota">Toyota</option>
+          <option value="Lamborghini">Lamborghini</option>
+          <option value="Lexus">Lexus</option>
+          <option value="McLaren">McLaren</option>
+        </select>
+
+        <select id="fuel">
+          <option value="">All Fuel Types</option>
+          <option value="Electric">Electric</option>
+          <option value="Hybrid">Hybrid</option>
+          <option value="Gasoline">Gasoline</option>
+          <option value="V8">V8</option>
+          <option value="V10">V10</option>
+          <option value="V12">V12</option>
+        </select>
+
+        <select id="transmission">
+          <option value="">All Transmissions</option>
+          <option value="Automatic">Automatic</option>
+          <option value="Manual">Manual</option>
+          <option value="Self-driving">Self-driving</option>
+        </select>
+
+        <div class="range-slider">
+          <label for="priceRange">Max Price: <span id="priceValue">$600,000</span></label>
+          <input type="range" id="priceRange" min="30000" max="600000" step="5000" value="600000" />
+        </div>
+      </div>
+
+      <button type="submit" class="btn primary" >Apply Filters</button>
+    </form>
+  </div>
+</section>
+
+
+
+<!-- ========== OUR VALUES SECTION ========== -->
+<section class="values" id="values">
+  <div class="container">
+    <h2 class="section-title">Our Values</h2>
+    <p class="section-subtext">What drives us to deliver exceptional automotive experiences</p>
+    
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="value-icon">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <h3>Trust & Transparency</h3>
+        <p>We believe in honest dealings and transparent pricing. Every vehicle comes with a detailed history report and our commitment to integrity.</p>
+      </div>
+      
+      <div class="value-card">
+        <div class="value-icon">
+          <i class="fas fa-award"></i>
+        </div>
+        <h3>Premium Quality</h3>
+        <p>Only the finest vehicles make it to our showroom. Each car undergoes rigorous inspection to meet our exceptional standards.</p>
+      </div>
+      
+      <div class="value-card">
+        <div class="value-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <h3>Customer First</h3>
+        <p>Your satisfaction is our priority. From browsing to purchase and beyond, we provide personalized service tailored to your needs.</p>
+      </div>
+      
+      <div class="value-card">
+        <div class="value-icon">
+          <i class="fas fa-leaf"></i>
+        </div>
+        <h3>Sustainable Future</h3>
+        <p>We're committed to promoting eco-friendly vehicles and sustainable practices for a cleaner automotive future.</p>
+      </div>
+      
+      <div class="value-card">
+        <div class="value-icon">
+          <i class="fas fa-handshake"></i>
+        </div>
+        <h3>Lasting Relationships</h3>
+        <p>We don't just sell cars; we build relationships. Our ongoing support ensures you're satisfied long after your purchase.</p>
+      </div>
+      
+      <div class="value-card">
+        <div class="value-icon">
+          <i class="fas fa-rocket"></i>
+        </div>
+        <h3>Innovation</h3>
+        <p>We embrace cutting-edge technology and innovative solutions to enhance your car buying and ownership experience.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ========== SERVICES SECTION ========== -->
+<section class="services" id="services">
+  <div class="container">
+    <h2 class="section-title">Our Services</h2>
+    <p class="section-subtext">Complete automotive solutions tailored to your needs</p>
+    
+    <div class="services-grid">
+      <div class="service-card featured">
+        <div class="service-icon">
+          <i class="fas fa-car"></i>
+        </div>
+        <h3>Vehicle Sales</h3>
+        <p>Browse our extensive collection of premium new and pre-owned vehicles from top luxury and performance brands.</p>
+        <div class="service-features">
+          <span>✓ Certified Pre-Owned</span>
+          <span>✓ Warranty Included</span>
+          <span>✓ Trade-In Evaluation</span>
+        </div>
+        <a href="#cars" class="service-btn">Browse Inventory</a>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fas fa-wrench"></i>
+        </div>
+        <h3>Maintenance & Repair</h3>
+        <p>Expert technicians provide comprehensive maintenance and repair services to keep your vehicle running at peak performance.</p>
+        <div class="service-features">
+          <span>✓ Factory-Trained Techs</span>
+          <span>✓ Genuine Parts</span>
+          <span>✓ Service Guarantee</span>
+        </div>
+        <a href="#contact" class="service-btn">Schedule Service</a>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fas fa-percentage"></i>
+        </div>
+        <h3>Financing Options</h3>
+        <p>Flexible financing solutions with competitive rates to help you drive away in your dream car today.</p>
+        <div class="service-features">
+          <span>✓ Multiple Lenders</span>
+          <span>✓ Quick Approval</span>
+          <span>✓ Custom Terms</span>
+        </div>
+        <a href="#contact" class="service-btn">Get Pre-Approved</a>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fas fa-key"></i>
+        </div>
+        <h3>Test Drives</h3>
+        <p>Experience the thrill firsthand with our comprehensive test drive program for all vehicles in our inventory.</p>
+        <div class="service-features">
+          <span>✓ Extended Test Drives</span>
+          <span>✓ Track Experience</span>
+          <span>✓ Expert Guidance</span>
+        </div>
+        <a href="#test-drive" class="service-btn">Book Test Drive</a>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <h3>Extended Warranty</h3>
+        <p>Protect your investment with our comprehensive extended warranty programs covering major components.</p>
+        <div class="service-features">
+          <span>✓ Comprehensive Coverage</span>
+          <span>✓ Roadside Assistance</span>
+          <span>✓ Nationwide Network</span>
+        </div>
+        <a href="#contact" class="service-btn">Learn More</a>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fas fa-car-crash"></i>
+        </div>
+        <h3>Insurance Services</h3>
+        <p>Streamline your purchase with our partner insurance providers offering competitive rates and coverage.</p>
+        <div class="service-features">
+          <span>✓ Multiple Providers</span>
+          <span>✓ Instant Quotes</span>
+          <span>✓ Full Coverage Options</span>
+        </div>
+        <a href="#contact" class="service-btn">Get Quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== MEET OUR TEAM SECTION ========== -->
+<section class="team" id="team">
+  <div class="container">
+    <div class="team-header">
+      <h2 class="section-title">Meet Our Team</h2>
+      <p class="section-subtext">The passionate professionals driving your automotive journey</p>
+    </div>
+    
+    <div class="team-layout">
+      <!-- Team Member 1 - Large Card -->
+      <div class="team-member large-card" data-position="hero">
+        <div class="member-image">
+          <img src="./images/marcus.jpg" alt="Marcus Rodriguez" />
+          <div class="member-overlay"></div>
+        </div>
+        <div class="member-info">
+          <h3>Marcus Rodriguez</h3>
+          <p class="role">CEO & Founder</p>
+          <p class="bio">With over 15 years in luxury automotive sales, Marcus founded DriveX to revolutionize the premium car buying experience.</p>
+          <div class="member-social">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Team Member 2 - Medium Card -->
+      <div class="team-member medium-card" data-position="right">
+        <div class="member-image">
+          <img src="./images/aisha.jpg" alt="Sarah Chen" />
+          <div class="member-overlay"></div>
+        </div>
+        <div class="member-info">
+          <h3>Aisha Chen</h3>
+          <p class="role">Sales Director</p>
+          <p class="bio">Aisha leads our sales team with expertise in matching customers with their perfect vehicle.</p>
+          <div class="member-social">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Team Member 3 - Small Card -->
+      <div class="team-member small-card" data-position="left">
+        <div class="member-image">
+          <img src="./images/david.jpg" alt="David Thompson" />
+          <div class="member-overlay"></div>
+        </div>
+        <div class="member-info">
+          <h3>David Thompson</h3>
+          <p class="role">Finance Manager</p>
+          <p class="bio">David ensures seamless financing solutions for every customer.</p>
+          <div class="member-social">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Team Member 4 - Medium Card -->
+      <div class="team-member medium-card" data-position="center">
+        <div class="member-image">
+          <img src="./images/emily.jpg" alt="Emily Johnson" />
+          <div class="member-overlay"></div>
+        </div>
+        <div class="member-info">
+          <h3>Emily Johnson</h3>
+          <p class="role">Service Manager</p>
+          <p class="bio">Emily oversees our world-class service department with factory-trained expertise.</p>
+          <div class="member-social">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Team Member 5 - Small Card -->
+      <div class="team-member small-card" data-position="floating">
+        <div class="member-image">
+          <img src="./images/james.jpg" alt="James Wilson" />
+          <div class="member-overlay"></div>
+        </div>
+        <div class="member-info">
+          <h3>James Wilson</h3>
+          <p class="role">Lead Technician</p>
+          <p class="bio">James leads our technical team with cutting-edge diagnostic expertise.</p>
+          <div class="member-social">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Team Member 6 - Medium Card -->
+      <div class="team-member medium-card" data-position="bottom">
+        <div class="member-image">
+          <img src="./images/lisa.jpg" alt="Lisa Park" />
+          <div class="member-overlay"></div>
+        </div>
+        <div class="member-info">
+          <h3>Lisa Park</h3>
+          <p class="role">Marketing Director</p>
+          <p class="bio">Lisa crafts our brand story and connects with automotive enthusiasts worldwide.</p>
+          <div class="member-social">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Floating decorative elements -->
+    <div class="team-decorations">
+      <div class="decoration-circle"></div>
+      <div class="decoration-line"></div>
+      <div class="decoration-dot"></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="testimonials" id="testimonials">
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        
+        <div class="test-container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">Discover why thousands of customers trust us with their automotive needs</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card featured">
+                    <i class="fas fa-quote-right quote-icon"></i>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"Absolutely exceptional service! The team went above and beyond to find me the perfect car. The financing process was seamless and the after-sales support is outstanding. I've never had such a premium car buying experience."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MS</div>
+                            <div class="author-info">
+                                <h4 class="author-name">Michael Stevens</h4>
+                                <p class="author-title">Business Executive</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-right quote-icon"></i>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"Professional, knowledgeable, and honest. They helped me find exactly what I was looking for within my budget. The maintenance service is top-notch and the staff treats you like family."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">SJ</div>
+                            <div class="author-info">
+                                <h4 class="author-name">Sarah Johnson</h4>
+                                <p class="author-title">Marketing Director</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-right quote-icon"></i>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"From the moment I walked in, I knew this was different. The attention to detail, the quality of service, and the transparency throughout the entire process was refreshing. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">DW</div>
+                            <div class="author-info">
+                                <h4 class="author-name">David Wilson</h4>
+                                <p class="author-title">Software Engineer</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-right quote-icon"></i>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"The team's expertise and dedication to customer satisfaction is unmatched. They made the entire car buying process stress-free and enjoyable. The extended warranty program gives me complete peace of mind."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">ER</div>
+                            <div class="author-info">
+                                <h4 class="author-name">Emily Rodriguez</h4>
+                                <p class="author-title">Healthcare Professional</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-right quote-icon"></i>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"Outstanding service and incredible value. The financing options were flexible and the trade-in evaluation was fair and transparent. I'll definitely be coming back for my next vehicle purchase."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">JT</div>
+                            <div class="author-info">
+                                <h4 class="author-name">James Thompson</h4>
+                                <p class="author-title">Project Manager</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-right quote-icon"></i>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"A truly premium experience from start to finish. The showroom is beautiful, the staff is incredibly knowledgeable, and the after-sales service is exceptional. This is how car dealerships should operate."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">LB</div>
+                            <div class="author-info">
+                                <h4 class="author-name">Lisa Brown</h4>
+                                <p class="author-title">Real Estate Agent</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="our-story" id="our-story">
+  <div class="container story-wrapper">
+    <div class="story-image">
+      <img src="./images/our story.jpg" alt="Our Story" />
+      <div class="gradient-overlay"></div>
+    </div>
+
+    <div class="story-content">
+      <h2 class="section-title">Our Story</h2>
+      <p class="section-subtitle">
+        Built from passion, driven by excellence. We’re redefining the car dealership experience.
+      </p>
+      <p class="story-text">
+        What began as a small, family-owned garage has grown into a trusted, high-performance dealership known for quality, transparency, and innovation. From vintage classics to next-gen EVs, we connect people to machines that move them, literally and emotionally.
+      </p>
+      <p class="story-text">
+        Every car we showcase, every service we provide, is done with precision, integrity, and care. Because for us, it's not just business, it's personal.
+      </p>
+
+      <a href="#contact" class="btn primary">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+  <section class="contact-us" id="contact">
+    <div class="map-container">
+      <iframe width="100%" height="650px" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB2NIWI3Tv9iDPrlnowr_0ZqZWoAQydKJU&q=Lekki%20Phase%201%2C%20Lekki%2C%20Nigeria&maptype=roadmap" allowfullscreen></iframe>
+      <div class="map-overlay">
+        <h3>Visit Our Showroom</h3>
+        <p>45 Luxury Lane, Lekki, Lagos, Nigeria</p>
+      </div>
+    </div>
+
+    <div class="contact-form-section container">
+      <div class="section-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">We'd love to hear from you. Send us a message below.</p>
+      </div>
+      <form class="contact-form">
+        <div class="form-group">
+          
+          <input type="text" id="name" placeholder="Enter your full name" required />
+        </div>
+
+        <div class="form-group">
+          
+          <input type="text" id="name" placeholder="Enter your email" required />
+        </div>
+
+        <div class="form-group full">
+          <textarea name="message" rows="5" placeholder="Enter your message" required></textarea>
+        </div>
+        <button class="btn submit-btn" type="submit">Send Message</button>
+      </form>
+    </div>
+</section>
+
+
+<section class="cta-premium">
+  <div class="cta-inner">
+    <div class="cta-content">
+      <h2 class="cta-title">Your Dream Car Is Just One Click Away</h2>
+      <p class="cta-subtitle">From sports to luxury, let us help you own the road. Book a test drive or talk to an advisor today.</p>
+    </div>
+    <div class="cta-buttons">
+      <a href="#featured" class="btn btn-glass">Explore Collection</a>
+      <a href="#contact" class="btn btn-outline-white">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h2 class="footer-logo">AutoLux</h2>
+      <p>Your trusted partner for luxury, performance, and innovation in every ride.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#featured">Featured</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <ul>
+        <li>Email: support@autolux.com</li>
+        <li>Phone: +234 800 123 4567</li>
+        <li>Location: Victoria Island, Lagos</li>
+      </ul>
+    </div>
+
+    <div class="footer-newsletter">
+      <h4>Stay Updated</h4>
+      <form>
+        <input type="email" placeholder="Enter your email" />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 AutoLux. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="script.js"></script>
+</body>
+</html>
